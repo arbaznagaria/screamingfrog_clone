@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .nav-items{
+        @apply block font-bold px-4 py-4 text-[#949698]
+    }
+    .nav-after{
+        @apply after:content-['\25bc'] after:rotate-90 after:ml-2 after:font-bold after:text-sm after:text-[#949698];
+    }
+    .pills-text{
+        @apply ml-3 text-sm;
+    }
+    .heading{
+        @apply text-2xl font-bold my-2;
+    }
+    .img-grid{
+        @apply absolute top-4 left-3 text-2xl font-bold text-white after:content-[url('https://cf.bstatic.com/static/img/flags/24/gb/b2f01d4fd94cb1420fcdbbef62c06ade1026fbbd.png')] after:ml-3;
+    }
+    .tabs-pills{
+        @apply px-4 py-3 mr-2 hover:bg-[rgba(0,0,0,0.06)] rounded-3xl;
+    }
+}
+
+.container {
+    max-width: 1340px;
+}
+
+.nav li ul.sub-menu::before {
+	content: '';
+	border-style: solid;
+	border-width: 0 10px 10px 10px;
+	border-color: transparent transparent #fff transparent;
+	position: absolute;
+	top: -10px;
+	display: block;
+	left: calc(50% - 10px);
+}
+.sub-menu{
+    display: none;
+}
+
+.nav li:hover ul.sub-menu, .nav li:hover ul.sub-menu:hover {
+	display: block;
+}
+.hover-icons{
+    margin-bottom: 11px;
+}
+
+.hover-icons:hover{
+    transform: scale(1.1,1.1);
+    background-color: #fdbb3e;
+    color: #ffffff;
+    border-top: 2px solid #ffffff;
+}
