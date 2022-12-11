@@ -9,18 +9,6 @@
     .nav-after{
         @apply after:content-['\25bc'] after:rotate-90 after:ml-2 after:font-bold after:text-sm after:text-[#949698];
     }
-    .pills-text{
-        @apply ml-3 text-sm;
-    }
-    .heading{
-        @apply text-2xl font-bold my-2;
-    }
-    .img-grid{
-        @apply absolute top-4 left-3 text-2xl font-bold text-white after:content-[url('https://cf.bstatic.com/static/img/flags/24/gb/b2f01d4fd94cb1420fcdbbef62c06ade1026fbbd.png')] after:ml-3;
-    }
-    .tabs-pills{
-        @apply px-4 py-3 mr-2 hover:bg-[rgba(0,0,0,0.06)] rounded-3xl;
-    }
 }
 
 .container {
